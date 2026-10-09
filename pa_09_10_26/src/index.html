@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Moderna</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="calculator">
+        <header class="calculator-header">
+            <h1>Calculadora</h1>
+            <p>Simples e moderna</p>
+        </header>
+
+        <section class="display" aria-label="Visor da calculadora">
+            <div id="previous-operand" class="previous-operand"></div>
+            <output id="current-operand" aria-live="polite">0</output>
+        </section>
+
+        <section class="buttons">
+            <button class="btn btn-action" data-action="clear">AC</button>
+            <button class="btn btn-action" data-action="delete">DEL</button>
+            <button class="btn btn-operator" data-operation="/">÷</button>
+            <button class="btn btn-operator" data-operation="*">×</button>
+
+            <button class="btn" data-number="7">7</button>
+            <button class="btn" data-number="8">8</button>
+            <button class="btn" data-number="9">9</button>
+            <button class="btn btn-operator" data-operation="-">−</button>
+
+            <button class="btn" data-number="4">4</button>
+            <button class="btn" data-number="5">5</button>
+            <button class="btn" data-number="6">6</button>
+            <button class="btn btn-operator" data-operation="+">+</button>
+
+            <button class="btn" data-number="1">1</button>
+            <button class="btn" data-number="2">2</button>
+            <button class="btn" data-number="3">3</button>
+            <button class="btn btn-equal" data-action="calculate">=</button>
+
+            <button class="btn btn-zero" data-number="0">0</button>
+            <button class="btn" data-action="decimal">.</button>
+        </section>
+
+        <footer>
+            Desenvolvido por Carlos Eduardo Santos Tenório
+        </footer>
+    </main>
+
+</body>
+</html>

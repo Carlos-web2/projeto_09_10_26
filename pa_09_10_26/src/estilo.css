@@ -1,0 +1,116 @@
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: #101827;
+    color: white;
+}
+
+/* Calculadora */
+.calculator {
+    width: 340px;
+    padding: 20px;
+    border-radius: 20px;
+    background: #182235;
+}
+
+/* Cabeçalho */
+.calculator-header {
+    margin-bottom: 20px;
+}
+
+.calculator-header h1 {
+    font-size: 24px;
+}
+
+.calculator-header p {
+    margin-top: 5px;
+    color: #94a3b8;
+}
+
+/* Visor */
+.display {
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    background: #0d1524;
+    text-align: right;
+    overflow-wrap: anywhere;
+}
+
+.previous-operand {
+    min-height: 18px;
+    margin-bottom: 10px;
+    color: #94a3b8;
+}
+
+#current-operand {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Botões */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.btn {
+    height: 55px;
+    border: none;
+    border-radius: 10px;
+    background: #26344b;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #34445e;
+}
+
+.btn-action {
+    background: #39465c;
+    color: #fca5a5;
+}
+
+.btn-operator {
+    background: #263e5f;
+    color: #7dd3fc;
+}
+
+.btn-equal {
+    grid-row: span 2;
+    height: auto;
+    background: #6366f1;
+}
+
+.btn-zero {
+    grid-column: span 2;
+}
+
+/* Rodapé */
+footer {
+    margin-top: 20px;
+    color: #718096;
+    font-size: 11px;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 380px) {
+    .calculator {
+        width: 100%;
+        margin: 15px;
+    }
+}
